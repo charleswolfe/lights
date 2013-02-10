@@ -75,7 +75,7 @@ ini_set('display_errors', '1');
 
 <table>
         <tr>
-        <td>Switch one</td><td align = 'center'><img src="images/led_off.png" id="sw1led" /></td>
+        <td>Switch one</td><td align = 'center'><img src="images/led_off.png" class="led" id="sw1led" /></td>
 	</tr><tr>
 	<td></td>
         <td><img onmousedown="change('sw1on','onpressed')" onmouseup="change('sw1on','onup')" src="images/switch_on_up.png" id="sw1on" class="remoteswitch"  />
@@ -83,7 +83,7 @@ ini_set('display_errors', '1');
         </tr>
 
         <tr>
-        <td>Switch two</td><td align="center"><img src="images/led_off.png" id="sw2led" /></td>
+        <td>Switch two</td><td align="center"><img src="images/led_off.png" class="led" id="sw2led" /></td>
         </tr><tr>
         <td></td>
         <td><img onmousedown="change('sw2on','onpressed')" onmouseup="change('sw2on','onup')" src="images/switch_on_up.png" id="sw2on" class="remoteswitch"  />
