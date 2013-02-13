@@ -24,7 +24,7 @@ function switch_flipped(who) {
 	if (endsWith(who,'on')){
 		console.log("turn on");
 
-	$.ajax({ url: 'http://home.gajo.us:8484/action.php',
+	$.ajax({ url: 'http://'+window.location.host+'/action.php',
          data: {cmd: 'set', switch:base_switch, pos: 'on'},
          type: 'post',
          success: function(output) {
@@ -33,7 +33,7 @@ function switch_flipped(who) {
 		});
 	} 
 	if (endsWith(who,'off')){
-        $.ajax({ url: 'http://home.gajo.us:8484/action.php',
+        $.ajax({ url: 'http://'+window.location.host+'/action.php',
          data: {cmd: 'set', switch:base_switch, pos: 'off'},
          type: 'post',
          success: function(output) {
@@ -59,7 +59,7 @@ function change(picName,imgName)
 
 window.onload=function(){
 	//Shopw status of lights when we first start page
-	$.ajax({ url: 'http://home.gajo.us:8484/action.php',
+	$.ajax({ url: 'http://'+window.location.host+'/action.php',
          data: {cmd: 'list'},
          type: 'post',
          success: function(output) {
