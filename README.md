@@ -23,3 +23,18 @@ In this pic, I used some dupont connectors (hard to crimp, hard to solder, but s
 ![Raspberry Pi showing 315mHz tranmitter installed with dupont connectors](https://raw.github.com/charleswolfe/lights/master/docs/images/pi_apart.jpg)
 
 
+
+To use:
+Copy the contents of the www folder you your /var/www or wherever your distro keeps web files.
+
+Compile (as root) switch.cpp
+
+<code>sudo g++ switch.cpp</code>
+
+move switch.cpp to /usr/bin
+
+<code>sudo mv a.out /usr/bin/switch</code>
+
+set sticky bit (so it can run as root when executed by a non-root user)
+
+<code>sudo chmod +s /usr/bin/switch</code>
