@@ -8,7 +8,8 @@ Except I use Woods 13569 from amazon (mine is 'channel B').
 [http://www.amazon.com/Woods-13569-Wireless-Control-Outlets/dp/B003ZTWYXY/ref=sr_1_1?ie=UTF8&qid=1360605592&sr=8-1&keywords=remote+outlet]
 I'm planning to add a flashier UI, PHP and Javascript and make a mobile application.
 
-NOTE: The Woods 13569 uses a 315mHz transmitter unlike the 433mHz Geoff's unit has.
+NOTE: The Woods 13569 uses a 315mHz transmitter unlike the 433mHz Geoff's unit has. So my antenna is 9.3(23.8cm) long.
+Also, protip: curl the antenna up around a screwdriver (all the antennas are like this inside of the recievers anyway)
 
 I am also using the channel 'B' type, so if your is channel A, you will need to follow Geoffs guide on his page [http://www.hoagieshouse.com/RaspberryPi/RCSockets/RCPlug.html]
 
